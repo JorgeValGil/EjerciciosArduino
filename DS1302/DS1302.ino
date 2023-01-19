@@ -1,12 +1,12 @@
 #include <virtuabotixRTC.h>
 // CLK -> 6 , DAT -> 7, RST -> 8
-virtuabotixRTC myRTC(6, 7, 8);
+virtuabotixRTC myRTC(D6, D7, D8);
 
 void setup() {
   Serial.begin(9600);
   // Formato para la fecha: segundos, minutos, horas, día de la semana, día del mes, mes, año
   // Comentar la línea, una vez configurado
-  //myRTC.setDS1302Time(30, 14, 19, 2, 18, 1, 2023);
+  //myRTC.setDS1302Time(30, 00, 20, 5, 19, 1, 2023);
 }
 
 void loop() {
